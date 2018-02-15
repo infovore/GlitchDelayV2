@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -566,149 +567,6 @@
 <connect gate="G$1" pin="GND2" pad="GND2"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
 <connect gate="G$1" pin="VUSB" pad="VUSB"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="jasons_stuff">
-<packages>
-<package name="SO14">
-<description>&lt;b&gt;Small Outline Package 14&lt;/b&gt;</description>
-<wire x1="4.305" y1="-1.9" x2="-4.305" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-4.305" y1="-1.9" x2="-4.305" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-4.305" y1="-1.4" x2="-4.305" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="4.305" y1="-1.4" x2="-4.305" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="4.305" y1="1.9" x2="4.305" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="4.305" y1="-1.4" x2="4.305" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-4.305" y1="1.9" x2="4.305" y2="1.9" width="0.2032" layer="51"/>
-<smd name="2" x="-2.54" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="13" x="-2.54" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="1" x="-3.81" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="-1.27" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="0" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="14" x="-3.81" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="12" x="-1.27" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="11" x="0" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="2.54" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="9" x="2.54" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="1.27" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="3.81" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="10" x="1.27" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="3.81" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-4.572" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="5.842" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-4.055" y1="-3.1" x2="-3.565" y2="-2" layer="51"/>
-<rectangle x1="-2.785" y1="-3.1" x2="-2.295" y2="-2" layer="51"/>
-<rectangle x1="-1.515" y1="-3.1" x2="-1.025" y2="-2" layer="51"/>
-<rectangle x1="-0.245" y1="-3.1" x2="0.245" y2="-2" layer="51"/>
-<rectangle x1="-0.245" y1="2" x2="0.245" y2="3.1" layer="51"/>
-<rectangle x1="-1.515" y1="2" x2="-1.025" y2="3.1" layer="51"/>
-<rectangle x1="-2.785" y1="2" x2="-2.295" y2="3.1" layer="51"/>
-<rectangle x1="-4.055" y1="2" x2="-3.565" y2="3.1" layer="51"/>
-<rectangle x1="1.025" y1="-3.1" x2="1.515" y2="-2" layer="51"/>
-<rectangle x1="2.295" y1="-3.1" x2="2.785" y2="-2" layer="51"/>
-<rectangle x1="3.565" y1="-3.1" x2="4.055" y2="-2" layer="51"/>
-<rectangle x1="3.565" y1="2" x2="4.055" y2="3.1" layer="51"/>
-<rectangle x1="2.295" y1="2" x2="2.785" y2="3.1" layer="51"/>
-<rectangle x1="1.025" y1="2" x2="1.515" y2="3.1" layer="51"/>
-</package>
-<package name="DIL14">
-<wire x1="7.62" y1="2.921" x2="7.62" y2="-2.921" width="0.2032" layer="21"/>
-<wire x1="-10.16" y1="2.921" x2="-10.16" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="-10.16" y1="-2.921" x2="-10.16" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="-10.16" y1="-1.016" x2="-10.16" y2="1.016" width="0.2032" layer="21" curve="180"/>
-<wire x1="-10.16" y1="2.921" x2="-9.906" y2="2.921" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="2.921" x2="7.366" y2="2.921" width="0.2032" layer="21"/>
-<wire x1="-10.16" y1="-2.921" x2="-9.906" y2="-2.921" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="-2.921" x2="7.366" y2="-2.921" width="0.2032" layer="21"/>
-<pad name="1" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-6.35" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-6.35" y="-1.778" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PIC16F1825">
-<wire x1="-15.24" y1="10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-10.16" x2="17.78" y2="10.16" width="0.254" layer="94"/>
-<wire x1="17.78" y1="10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
-<pin name="VDD" x="-20.32" y="7.62" length="middle" direction="pwr"/>
-<pin name="RA5" x="-20.32" y="5.08" length="middle"/>
-<pin name="RA4/SDO" x="-20.32" y="2.54" length="middle"/>
-<pin name="RA3/MCLR#/VPP" x="-20.32" y="0" length="middle" direction="in"/>
-<pin name="RC5/RX" x="-20.32" y="-2.54" length="middle"/>
-<pin name="RC4/TX" x="-20.32" y="-5.08" length="middle"/>
-<pin name="RC3/SS#" x="-20.32" y="-7.62" length="middle"/>
-<pin name="RC2" x="22.86" y="-7.62" length="middle" rot="R180"/>
-<pin name="RC1/SDA/SDI" x="22.86" y="-5.08" length="middle" rot="R180"/>
-<pin name="RCO/SCL/SCK" x="22.86" y="-2.54" length="middle" rot="R180"/>
-<pin name="RA2/INT" x="22.86" y="0" length="middle" rot="R180"/>
-<pin name="RA1/ICPCLK" x="22.86" y="2.54" length="middle" rot="R180"/>
-<pin name="RA0/ICSPDAT" x="22.86" y="5.08" length="middle" rot="R180"/>
-<pin name="VSS" x="22.86" y="7.62" length="middle" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PIC16F1825">
-<gates>
-<gate name="G$1" symbol="PIC16F1825" x="2.54" y="15.24"/>
-</gates>
-<devices>
-<device name="SO14" package="SO14">
-<connects>
-<connect gate="G$1" pin="RA0/ICSPDAT" pad="13"/>
-<connect gate="G$1" pin="RA1/ICPCLK" pad="12"/>
-<connect gate="G$1" pin="RA2/INT" pad="11"/>
-<connect gate="G$1" pin="RA3/MCLR#/VPP" pad="4"/>
-<connect gate="G$1" pin="RA4/SDO" pad="3"/>
-<connect gate="G$1" pin="RA5" pad="2"/>
-<connect gate="G$1" pin="RC1/SDA/SDI" pad="9"/>
-<connect gate="G$1" pin="RC2" pad="8"/>
-<connect gate="G$1" pin="RC3/SS#" pad="7"/>
-<connect gate="G$1" pin="RC4/TX" pad="6"/>
-<connect gate="G$1" pin="RC5/RX" pad="5"/>
-<connect gate="G$1" pin="RCO/SCL/SCK" pad="10"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-<connect gate="G$1" pin="VSS" pad="14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="DIL14" package="DIL14">
-<connects>
-<connect gate="G$1" pin="RA0/ICSPDAT" pad="13"/>
-<connect gate="G$1" pin="RA1/ICPCLK" pad="12"/>
-<connect gate="G$1" pin="RA2/INT" pad="11"/>
-<connect gate="G$1" pin="RA3/MCLR#/VPP" pad="4"/>
-<connect gate="G$1" pin="RA4/SDO" pad="3"/>
-<connect gate="G$1" pin="RA5" pad="2"/>
-<connect gate="G$1" pin="RC1/SDA/SDI" pad="9"/>
-<connect gate="G$1" pin="RC2" pad="8"/>
-<connect gate="G$1" pin="RC3/SS#" pad="7"/>
-<connect gate="G$1" pin="RC4/TX" pad="6"/>
-<connect gate="G$1" pin="RC5/RX" pad="5"/>
-<connect gate="G$1" pin="RCO/SCL/SCK" pad="10"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-<connect gate="G$1" pin="VSS" pad="14"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10927,7 +10785,6 @@ Source: 153627-da-01-en-Temperatur-Sensor_KTY10-6_Philips.pdf</description>
 </classes>
 <parts>
 <part name="U$1" library="Teensy356" deviceset="TEENSY_3.5/3.6_BASIC" device=""/>
-<part name="PIC" library="jasons_stuff" deviceset="PIC16F1825" device="DIL14"/>
 <part name="TL074" library="MusicThingModular" deviceset="TL074" device="_"/>
 <part name="A_IN" library="MusicThingModular" deviceset="THONKICONN" device="NEW"/>
 <part name="A_OUT" library="MusicThingModular" deviceset="THONKICONN" device="NEW"/>
@@ -10953,8 +10810,6 @@ Source: 153627-da-01-en-Temperatur-Sensor_KTY10-6_Philips.pdf</description>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="C4" library="adafruit" deviceset="C-US" device="025-030X050" value="10uF"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="R10" library="MusicThingModular" deviceset="RESISTOR" device="7MM" value="4.7k"/>
-<part name="R11" library="MusicThingModular" deviceset="RESISTOR" device="7MM" value="4.7k"/>
 <part name="D3" library="adafruit" deviceset="1N4004" device="" value="1N4001"/>
 <part name="D4" library="adafruit" deviceset="1N4004" device="" value="1N4001"/>
 <part name="VREG" library="adafruit" deviceset="78*" device="Z" technology="L05"/>
@@ -10982,12 +10837,6 @@ Source: 153627-da-01-en-Temperatur-Sensor_KTY10-6_Philips.pdf</description>
 <part name="S2" library="MusicThingModular" deviceset="D6_PUSH_SWITCH" device=""/>
 <part name="R15" library="MusicThingModular" deviceset="RESISTOR" device="7MM" value="1k"/>
 <part name="JP2" library="adafruit" deviceset="PINHD-1X6" device=""/>
-<part name="C2" library="adafruit" deviceset="C-US" device="025-030X050" value="0.1uF"/>
-<part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="JP1" library="adafruit" deviceset="PINHD-1X6" device=""/>
-<part name="R16" library="MusicThingModular" deviceset="RESISTOR" device="7MM" value="1k"/>
-<part name="LED4" library="adafruit" deviceset="LED" device="3MM"/>
-<part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="C5" library="adafruit" deviceset="CPOL-US" device="E2,5-6E" value="10uF"/>
 <part name="C8" library="adafruit" deviceset="CPOL-US" device="E2,5-6E" value="10uF"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
@@ -11005,11 +10854,9 @@ Source: 153627-da-01-en-Temperatur-Sensor_KTY10-6_Philips.pdf</description>
 <text x="-48.26" y="177.8" size="1.778" layer="91">Convert -5v..5v to 0..1.2v (the Teensy internal reference voltage). Clamp output voltage from 0..3,3v to protect Teensy from damage</text>
 <text x="-45.72" y="124.46" size="1.778" layer="91">Convert 0..1.2v to 0..10v</text>
 <text x="172.72" y="210.82" size="1.778" layer="91">PIC Programmer</text>
-<text x="111.76" y="139.7" size="1.778" layer="91">PIC test LED</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="342.9" y="144.78"/>
-<instance part="PIC" gate="G$1" x="205.74" y="129.54"/>
 <instance part="TL074" gate="A" x="-15.24" y="157.48" rot="MR180"/>
 <instance part="TL074" gate="B" x="22.86" y="154.94" rot="MR180"/>
 <instance part="TL074" gate="C" x="-17.78" y="101.6" rot="MR180"/>
@@ -11038,8 +10885,6 @@ Source: 153627-da-01-en-Temperatur-Sensor_KTY10-6_Philips.pdf</description>
 <instance part="GND6" gate="1" x="10.16" y="86.36"/>
 <instance part="C4" gate="G$1" x="38.1" y="99.06" rot="R270"/>
 <instance part="GND7" gate="1" x="48.26" y="88.9"/>
-<instance part="R10" gate="G$1" x="373.38" y="144.78" rot="R90"/>
-<instance part="R11" gate="G$1" x="383.54" y="144.78" rot="R90"/>
 <instance part="D3" gate="1" x="-38.1" y="-35.56" rot="R90"/>
 <instance part="D4" gate="1" x="-38.1" y="-50.8" rot="R90"/>
 <instance part="VREG" gate="A1" x="104.14" y="-27.94"/>
@@ -11067,12 +10912,6 @@ Source: 153627-da-01-en-Temperatur-Sensor_KTY10-6_Philips.pdf</description>
 <instance part="S2" gate="G$1" x="299.72" y="170.18"/>
 <instance part="R15" gate="G$1" x="43.18" y="154.94"/>
 <instance part="JP2" gate="A" x="-45.72" y="43.18"/>
-<instance part="C2" gate="G$1" x="182.88" y="149.86"/>
-<instance part="GND12" gate="1" x="182.88" y="154.94" rot="R180"/>
-<instance part="JP1" gate="A" x="185.42" y="195.58"/>
-<instance part="R16" gate="G$1" x="124.46" y="134.62"/>
-<instance part="LED4" gate="G$1" x="116.84" y="134.62" rot="R270"/>
-<instance part="GND13" gate="1" x="109.22" y="134.62" rot="R270"/>
 <instance part="C5" gate="G$1" x="12.7" y="-33.02"/>
 <instance part="C8" gate="G$1" x="12.7" y="-48.26"/>
 <instance part="GND14" gate="1" x="20.32" y="-43.18" rot="R90"/>
@@ -11269,11 +11108,6 @@ Source: 153627-da-01-en-Temperatur-Sensor_KTY10-6_Philips.pdf</description>
 <label x="363.22" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PIC" gate="G$1" pin="VSS"/>
-<wire x1="228.6" y1="137.16" x2="231.14" y2="137.16" width="0.1524" layer="91"/>
-<label x="228.6" y="137.16" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="SV1" gate="G$1" pin="7"/>
 <wire x1="-40.64" y1="20.32" x2="-38.1" y2="20.32" width="0.1524" layer="91"/>
 <label x="-40.64" y="20.32" size="1.778" layer="95"/>
@@ -11370,19 +11204,6 @@ Source: 153627-da-01-en-Temperatur-Sensor_KTY10-6_Philips.pdf</description>
 <label x="320.04" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="GND12" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="A" pin="3"/>
-<wire x1="182.88" y1="198.12" x2="172.72" y2="198.12" width="0.1524" layer="91"/>
-<label x="172.72" y="198.12" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="LED4" gate="G$1" pin="C"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C5" gate="G$1" pin="-"/>
 <pinref part="C8" gate="G$1" pin="+"/>
 <wire x1="12.7" y1="-38.1" x2="12.7" y2="-43.18" width="0.1524" layer="91"/>
@@ -11410,27 +11231,7 @@ Source: 153627-da-01-en-Temperatur-Sensor_KTY10-6_Philips.pdf</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="3V3_LO"/>
 <label x="363.22" y="152.4" size="1.778" layer="95"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="373.38" y1="149.86" x2="373.38" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="152.4" x2="363.22" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="383.54" y1="149.86" x2="383.54" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="383.54" y1="152.4" x2="373.38" y2="152.4" width="0.1524" layer="91"/>
-<junction x="373.38" y="152.4"/>
-</segment>
-<segment>
-<pinref part="PIC" gate="G$1" pin="VDD"/>
-<wire x1="185.42" y1="137.16" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
-<label x="162.56" y="137.16" size="1.778" layer="95"/>
-<wire x1="182.88" y1="137.16" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="137.16" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="137.16" x2="182.88" y2="144.78" width="0.1524" layer="91"/>
-<junction x="182.88" y="137.16"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="JP1" gate="A" pin="2"/>
-<wire x1="182.88" y1="200.66" x2="170.18" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="200.66" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
-<junction x="170.18" y="137.16"/>
 </segment>
 <segment>
 <pinref part="VR1" gate="G$1" pin="A"/>
@@ -11538,17 +11339,6 @@ Source: 153627-da-01-en-Temperatur-Sensor_KTY10-6_Philips.pdf</description>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="PIC" gate="G$1" pin="RCO/SCL/SCK"/>
-<wire x1="228.6" y1="127" x2="231.14" y2="127" width="0.1524" layer="91"/>
-<label x="228.6" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="19/A5/SCL"/>
-<label x="363.22" y="139.7" size="1.778" layer="95"/>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="363.22" y1="139.7" x2="373.38" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="JP2" gate="A" pin="1"/>
 <wire x1="-48.26" y1="50.8" x2="-58.42" y2="50.8" width="0.1524" layer="91"/>
 <label x="-58.42" y="50.8" size="1.778" layer="95"/>
@@ -11556,90 +11346,34 @@ Source: 153627-da-01-en-Temperatur-Sensor_KTY10-6_Philips.pdf</description>
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="PIC" gate="G$1" pin="RC1/SDA/SDI"/>
-<wire x1="228.6" y1="124.46" x2="231.14" y2="124.46" width="0.1524" layer="91"/>
-<label x="228.6" y="124.46" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="18/A4/SDA"/>
-<label x="363.22" y="137.16" size="1.778" layer="95"/>
-<wire x1="363.22" y1="137.16" x2="383.54" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="383.54" y1="137.16" x2="383.54" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="JP2" gate="A" pin="2"/>
 <wire x1="-48.26" y1="48.26" x2="-58.42" y2="48.26" width="0.1524" layer="91"/>
 <label x="-58.42" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PGD" class="0">
+<net name="POT1" class="0">
 <segment>
 <pinref part="VR1" gate="G$1" pin="S"/>
-<wire x1="147.32" y1="177.8" x2="241.3" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="177.8" x2="241.3" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="PIC" gate="G$1" pin="RA0/ICSPDAT"/>
-<wire x1="241.3" y1="134.62" x2="228.6" y2="134.62" width="0.1524" layer="91"/>
-<label x="228.6" y="134.62" size="1.778" layer="95"/>
+<wire x1="147.32" y1="177.8" x2="160.02" y2="177.8" width="0.1524" layer="91"/>
+<label x="160.02" y="177.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="4"/>
-<wire x1="182.88" y1="195.58" x2="172.72" y2="195.58" width="0.1524" layer="91"/>
-<label x="172.72" y="195.58" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="35/A16"/>
+<wire x1="363.22" y1="104.14" x2="368.3" y2="104.14" width="0.1524" layer="91"/>
+<label x="368.3" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="PGC" class="0">
+<net name="POT2" class="0">
 <segment>
 <pinref part="VR2" gate="G$1" pin="S"/>
 <wire x1="147.32" y1="149.86" x2="152.4" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="149.86" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="114.3" x2="236.22" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="114.3" x2="236.22" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="PIC" gate="G$1" pin="RA1/ICPCLK"/>
-<wire x1="236.22" y1="132.08" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
-<label x="228.6" y="132.08" size="1.778" layer="95"/>
+<wire x1="152.4" y1="149.86" x2="160.02" y2="149.86" width="0.1524" layer="91"/>
+<label x="160.02" y="149.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="5"/>
-<wire x1="182.88" y1="193.04" x2="172.72" y2="193.04" width="0.1524" layer="91"/>
-<label x="172.72" y="193.04" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="VR3" gate="G$1" pin="S"/>
-<wire x1="147.32" y1="121.92" x2="147.32" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="106.68" x2="243.84" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="106.68" x2="243.84" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="PIC" gate="G$1" pin="RA2/INT"/>
-<wire x1="243.84" y1="129.54" x2="228.6" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="VR4" gate="G$1" pin="S"/>
-<wire x1="147.32" y1="93.98" x2="251.46" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="93.98" x2="251.46" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="PIC" gate="G$1" pin="RC2"/>
-<wire x1="251.46" y1="121.92" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="VR5" gate="G$1" pin="S"/>
-<wire x1="147.32" y1="66.04" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="66.04" x2="182.88" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="PIC" gate="G$1" pin="RA4/SDO"/>
-<wire x1="182.88" y1="132.08" x2="185.42" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="VR6" gate="G$1" pin="S"/>
-<wire x1="147.32" y1="38.1" x2="167.64" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="38.1" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="PIC" gate="G$1" pin="RC3/SS#"/>
-<wire x1="167.64" y1="121.92" x2="185.42" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="36/A17"/>
+<wire x1="363.22" y1="106.68" x2="368.3" y2="106.68" width="0.1524" layer="91"/>
+<label x="368.3" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -11754,31 +11488,6 @@ Source: 153627-da-01-en-Temperatur-Sensor_KTY10-6_Philips.pdf</description>
 <label x="-58.42" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MCLR" class="0">
-<segment>
-<pinref part="PIC" gate="G$1" pin="RA3/MCLR#/VPP"/>
-<wire x1="185.42" y1="129.54" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
-<label x="175.26" y="129.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="A" pin="1"/>
-<wire x1="182.88" y1="203.2" x2="172.72" y2="203.2" width="0.1524" layer="91"/>
-<label x="172.72" y="203.2" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="1"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="2"/>
-<pinref part="PIC" gate="G$1" pin="RA5"/>
-<wire x1="129.54" y1="134.62" x2="185.42" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="FU1" gate="G$1" pin="1"/>
@@ -11861,6 +11570,54 @@ Source: 153627-da-01-en-Temperatur-Sensor_KTY10-6_Philips.pdf</description>
 <pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="29"/>
 <wire x1="317.5" y1="106.68" x2="322.58" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="POT3" class="0">
+<segment>
+<pinref part="VR3" gate="G$1" pin="S"/>
+<wire x1="147.32" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
+<label x="160.02" y="121.92" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="37/A18"/>
+<wire x1="363.22" y1="109.22" x2="368.3" y2="109.22" width="0.1524" layer="91"/>
+<label x="368.3" y="109.22" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="POT4" class="0">
+<segment>
+<pinref part="VR4" gate="G$1" pin="S"/>
+<wire x1="147.32" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
+<label x="160.02" y="93.98" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="38/A19"/>
+<wire x1="363.22" y1="111.76" x2="368.3" y2="111.76" width="0.1524" layer="91"/>
+<label x="368.3" y="111.76" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="POT5" class="0">
+<segment>
+<pinref part="VR5" gate="G$1" pin="S"/>
+<wire x1="147.32" y1="66.04" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
+<label x="160.02" y="66.04" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="39/A20"/>
+<wire x1="363.22" y1="114.3" x2="368.3" y2="114.3" width="0.1524" layer="91"/>
+<label x="368.3" y="114.3" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="POT6" class="0">
+<segment>
+<pinref part="VR6" gate="G$1" pin="S"/>
+<wire x1="147.32" y1="38.1" x2="160.02" y2="38.1" width="0.1524" layer="91"/>
+<label x="160.02" y="38.1" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="32/A13"/>
+<wire x1="322.58" y1="99.06" x2="317.5" y2="99.06" width="0.1524" layer="91"/>
+<label x="317.5" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
