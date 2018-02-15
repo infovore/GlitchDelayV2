@@ -19,7 +19,7 @@ class GLITCH_DELAY_INTERFACE
  
   static const int32_t  BIT_DEPTH_BUTTON_HOLD_TIME_MS   = 2000;
   
-  I2C_DIAL          m_dials[NUM_DIALS];
+  DIAL          m_dials[NUM_DIALS];
 
   BUTTON            m_bpm_button;
   BUTTON            m_mode_button;

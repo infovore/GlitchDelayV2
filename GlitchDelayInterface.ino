@@ -1,11 +1,8 @@
 #include "GlitchDelayInterface.h"
 #include "CompileSwitches.h"
 
-const int I2C_ADDRESS(111); 
-const int I2C_DATA_SIZE_IN_BYTES(12);
-  
 GLITCH_DELAY_INTERFACE::GLITCH_DELAY_INTERFACE() :
-  m_dials( { I2C_DIAL( true ), I2C_DIAL( true ), I2C_DIAL( true ), I2C_DIAL( true ), I2C_DIAL( true ), I2C_DIAL( true ) } ),
+  m_dials( { DIAL( A16, true ), DIAL( A17, true ), DIAL( A18, true ), DIAL( A19, true ), DIAL( A20, true ), DIAL( A13, true ) } ),
   m_bpm_button( BPM_BUTTON_PIN, false ),
   m_mode_button( MODE_BUTTON_PIN, false ),
   m_tap_bpm( BPM_BUTTON_PIN ),
@@ -33,15 +30,10 @@ void GLITCH_DELAY_INTERFACE::setup()
     m_mode_leds[i].setup();
     m_mode_leds[i].set_brightness( 0.25f );
   }
-
-  Wire.begin();
 }
 
 void GLITCH_DELAY_INTERFACE::update( uint32_t time_in_ms )
 {
-  // start I2C with PIC chip
-  Wire.requestFrom(I2C_ADDRESS, I2C_DATA_SIZE_IN_BYTES);
-
   // read each pot
   for( int d = 0; d < NUM_DIALS; ++d )
   {

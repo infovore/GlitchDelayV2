@@ -1,8 +1,8 @@
 #include <Audio.h>
-#include <Wire.h>
 #include <SPI.h>
 #include <SD.h>
 #include <SerialFlash.h>
+#include <ADC.h>
 #include <Bounce.h>     // Arduino compiler can get confused if you don't include include all required headers in this file?!?
 
 #include "CompileSwitches.h"

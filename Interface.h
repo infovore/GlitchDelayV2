@@ -36,17 +36,6 @@ public:
 
 //////////////////////////////////////
 
-class I2C_DIAL : public DIAL_BASE
-{
-public:
-
-  I2C_DIAL( bool invert );
-
-  bool          update();
-};
-
-//////////////////////////////////////
-
 class BUTTON
 {
   int16_t       m_data_pin;

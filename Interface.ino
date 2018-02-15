@@ -1,8 +1,10 @@
-#include <Wire.h>
+#include <ADC.h>
 
 #include "Interface.h"
 
 #define BOUNCE_TIME         10
+
+ADC *interfaceAdc = new ADC();
 
 //////////////////////////////////////
 
@@ -52,26 +54,7 @@ DIAL::DIAL( int data_pin, bool invert ) :
 
 bool DIAL::update()
 {
-  int new_value = analogRead( m_data_pin );
-
-  return set_current_value( new_value );
-}
-
-//////////////////////////////////////
-
-I2C_DIAL::I2C_DIAL( bool invert ) :
-  DIAL_BASE( invert )
-{
-  
-}
-
-bool I2C_DIAL::update()
-{
-  // I2C should already be setup by this point ( Wire.requestFrom() )
-  const byte b1 = Wire.read();
-  const byte b2 = Wire.read();
-
- int new_value = b1 | ( b2 << 8 );
+  int new_value = interfaceAdc->analogRead(m_data_pin, ADC_1);
 
   return set_current_value( new_value );
 }
